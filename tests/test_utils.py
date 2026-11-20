@@ -1,7 +1,5 @@
-import pytest
-
 from nhs_forecast.utils import calculate_growth
-
+import pytest
 
 def test_positive_growth():
     result = calculate_growth(1000, 1200)
@@ -15,3 +13,4 @@ def test_error_growth():
 def test_zero_growth():
     result = calculate_growth(500, 500)
     assert result == 0.0
+    
